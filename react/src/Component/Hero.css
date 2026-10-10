@@ -54,7 +54,7 @@
 .hero-photo {
   position: relative;
   justify-self: center;
-  width: min(330px, 100%);
+  width: min(360px, 100%);
 }
 
 /* yellow block behind the photo */
@@ -70,7 +70,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 5;
-  object-fit: cover;
+  object-fit: fill;
   border: 3px solid var(--ink);
   border-radius: var(--radius);
   background: var(--blue-soft);

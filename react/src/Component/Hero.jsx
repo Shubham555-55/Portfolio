@@ -1,16 +1,17 @@
 import React from 'react'
 import "./Hero.css"
 
-const Hero = () => {
+
+const Hero = ({profile}) => {
   return (
   <section className='hero' id='home' >
     <div className='container hero-inner' >
     <div className='hero-txt'>
     <p className='hero-greeting'>Hii I'm</p>
-    <h1 className='hero-name' >Shubham mishra</h1>
-    <h2 className='hero-title' >MERN stack Developer </h2>
+    <h1 className='hero-name' >{profile.name}</h1>
+    <h2 className='hero-title' >{profile.title} </h2>
     <p className='hero-tagline' >
-        I am a developer and working in mern stack projects Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, quas.
+       {profile.tagline}
     </p>
     <div className='hero-buttons' >
     <a href="#projects" className='btn btn-primary' >See my projects </a>
@@ -19,7 +20,7 @@ const Hero = () => {
     
     </div>
     <div className='hero-photo'>
-    <img src="/Shubham.jpeg" alt="Shubham " />
+    <img src={profile.photo} alt={profile.name} />
     </div>
     </div>
   </section>
